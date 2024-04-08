@@ -14,20 +14,38 @@ img {
 }
 
 body {
-  background-color: var(--yellow);
-  font-family: "Figtree", sans-serif;
-  min-height: 100vh;
-  display: flex;
   align-items: center;
+  background-color: var(--yellow);
+  display: flex;
+  font-family: "Figtree", sans-serif;
   justify-content: center;
+  min-height: 100vh;
 }
 
 main {
   background-color: var(--white);
-  width: 327px;
+  border-radius: 20px;
+  border: 1px solid var(--black);
   margin-left: auto;
   margin-right: auto;
   padding: 24px;
+  position: relative;
+  width: 327px;
+}
+
+main::after {
+  background-color: var(--black);
   border-radius: 20px;
+  bottom: -8px;
+  content: "";
+  height: 100%;
+  left: 8px;
+  position: absolute;
+  width: 100%;
+  z-index: -10;
+}
+
+.blog-card-img {
+  border-radius: 10px;
 }
 
