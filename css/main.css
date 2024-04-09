@@ -31,6 +31,10 @@ main {
   padding: 24px;
   position: relative;
   width: 327px;
+
+  @media screen and (min-width: 1024px) {
+    width: 384px;
+  }
 }
 
 main::after {
@@ -49,15 +53,16 @@ main::after {
   border-radius: 10px;
   height: 200px;
   object-fit: cover;
+  margin-bottom: 12px;
 }
 
 .category {
+  background-color: var(--yellow);
+  border-radius: 4px;
   font-size: 12px;
   font-weight: 800;
   padding: 4px 12px;
-  background-color: var(--yellow);
   width: min-content;
-  border-radius: 4px;
 }
 
 .published-date {
@@ -68,6 +73,12 @@ main::after {
 .title {
   font-size: 20px;
   font-weight: 800;
+  transition: .4s;
+
+  &:hover {
+    color: var(--yellow);
+    cursor: pointer;
+  }
 }
 
 .description {
@@ -78,14 +89,14 @@ main::after {
 }
 
 .author-wrapper {
-  display: flex;
   align-items: center;
+  display: flex;
 }
 
 .author-img {
   height: 32px;
-  width: 32px;
   margin-right: 12px;
+  width: 32px;
 }
 
 .author {
