@@ -51,3 +51,14 @@ main::after {
   object-fit: cover;
 }
 
+.author-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.author-img {
+  height: 32px;
+  width: 32px;
+  margin-right: 12px;
+}
+
