@@ -70,6 +70,13 @@ main::after {
   font-weight: 800;
 }
 
+.description {
+  color: var(--grey);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+}
+
 .author-wrapper {
   display: flex;
   align-items: center;
@@ -79,5 +86,9 @@ main::after {
   height: 32px;
   width: 32px;
   margin-right: 12px;
+}
+
+.author {
+  font-weight: 700;
 }
 
