@@ -51,6 +51,25 @@ main::after {
   object-fit: cover;
 }
 
+.category {
+  font-size: 12px;
+  font-weight: 800;
+  padding: 4px 12px;
+  background-color: var(--yellow);
+  width: min-content;
+  border-radius: 4px;
+}
+
+.published-date {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 800;
+}
+
 .author-wrapper {
   display: flex;
   align-items: center;
