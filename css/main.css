@@ -47,5 +47,7 @@ main::after {
 
 .blog-card-img {
   border-radius: 10px;
+  height: 200px;
+  object-fit: cover;
 }
 
